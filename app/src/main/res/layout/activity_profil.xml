@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beyaz"
+    tools:context=".Activitys.ProfilActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarProfil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/beyaz"
+            android:theme="@style/ToolbarHome">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:textColor="@color/siyah"
+                android:textSize="21dp"
+                android:layout_marginRight="?android:attr/actionBarSize"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/KarsiProfilIsım"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="@color/siyah"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/KarsiProfilMail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/siyah"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/KarsiProfilavatar"
+                        android:background="@color/beyaz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:elevation="0dp"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/KarsiProfiltabLayoutProfil"
+                android:layout_width="match_parent"
+                app:tabTextColor="@color/siyah"
+                android:layout_height="50dp">
+
+            </android.support.design.widget.TabLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/KarsiProfilviewPagerProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beyaz"
+    tools:context=".Activitys.IlanDuzenleActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollViewFotoGuncelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/fotoGuncelleLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/fotoGuncelle"
+            android:drawableLeft="@drawable/anasayfa_ic_camera"
+            android:textAlignment="textStart"
+            android:drawablePadding="30dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_kayit_giris_ovallestir"
+            android:textColor="@color/beyaz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Fotoğraf Güncelle"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ürün Başlığı"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/urunBaslikGuncelle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textSize="19dp"
+            android:background="@drawable/edittextoval"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Kategori Kısmı"
+            android:textSize="18dp"/>
+        <Spinner
+            android:id="@+id/spinnerKategoriGuncelle"
+            android:background="@drawable/edittextoval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ürün Genel Özellikler"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/urunGenelOzellikleriGuncelle"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:textSize="19dp"
+            android:background="@drawable/edittextoval"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ürün Fiyatı"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/urunFiyatGuncelle"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textSize="19dp"
+            android:background="@drawable/edittextoval"/>
+
+        <Button
+            android:id="@+id/buttonIlanGuncelle"
+            android:background="@drawable/baslangic_buton_ovallestir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:textSize="17dp"
+            android:textColor="@color/anarenk"
+            android:text="Güncelle"/>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

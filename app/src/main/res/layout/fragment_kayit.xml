@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentler.KayitFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextKayitFragmentMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittextoval"
+                android:drawableLeft="@drawable/edittextmail"
+                android:drawablePadding="7dp"
+                android:hint="E-posta"
+                android:padding="10dp"
+                android:textColorHint="@color/hintrenk"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/editTextKayitFragmentSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittextoval"
+                android:drawableLeft="@drawable/edittextpassword"
+                android:drawablePadding="7dp"
+                android:hint="Şifre"
+                android:padding="10dp"
+                android:textColorHint="@color/hintrenk"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/editTextKayitFragmentIsim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittextoval"
+                android:drawableLeft="@drawable/edittextisim"
+                android:drawablePadding="7dp"
+                android:hint="İsim"
+                android:padding="10dp"
+                android:textColorHint="@color/hintrenk"
+                android:inputType="textPersonName"/>
+
+            <Button
+                android:id="@+id/buttonFragmentKayit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_kayit_giris_ovallestir"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Kaydol"
+                android:textAllCaps="false"
+                android:textColor="@color/beyaz"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

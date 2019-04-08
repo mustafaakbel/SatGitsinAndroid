@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beyaz"
+    tools:context=".Fragmentler.IlanverFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/galeri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <Button
+                android:drawableLeft="@drawable/anasayfa_ic_camera"
+                android:textAlignment="textStart"
+                android:drawablePadding="30dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_kayit_giris_ovallestir"
+                android:textColor="@color/beyaz"
+                android:id="@+id/yukle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Fotoğraf Yükle"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori seçiniz "
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="17dp"/>
+            <Spinner
+                android:id="@+id/spinnerKategori"
+                android:background="@drawable/edittextoval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="20dp"></Spinner>
+
+            <EditText
+                android:id="@+id/ediTextUrunBaslik"
+                android:background="@drawable/edittextoval"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ürün başlığını giriniz.."
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/editTextUrunOzellikleri"
+                android:padding="25dp"
+                android:layout_marginTop="15dp"
+                android:hint="Ürünün genel özelliklerini giriniz.."
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:background="@drawable/edittextoval"
+                android:backgroundTint="@color/acikrenkgri"
+                android:layout_marginBottom="20dp"
+                android:gravity="top"/>
+            <EditText
+                android:id="@+id/ediTextUrunFiyat"
+                android:background="@drawable/edittextoval"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ürün fiyatını giriniz"
+                android:layout_margin="10dp"
+                android:inputType="number"/>
+            <Button
+                android:id="@+id/buttonIlanVer"
+                android:background="@drawable/baslangic_buton_ovallestir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textSize="17dp"
+                android:textColor="@color/anarenk"
+                android:text="İlan ver"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

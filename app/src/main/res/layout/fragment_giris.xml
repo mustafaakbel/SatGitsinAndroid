@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentler.GirisFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextGirisMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittextoval"
+                    android:drawableLeft="@drawable/edittextmail"
+                    android:drawablePadding="7dp"
+                    android:hint="E-posta"
+                    android:padding="10dp"
+                    android:textColorHint="@color/hintrenk"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                    android:id="@+id/editTextGirisSifre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittextoval"
+                    android:drawableLeft="@drawable/edittextpassword"
+                    android:drawablePadding="7dp"
+                    android:hint="Şifre"
+                    android:padding="10dp"
+                    android:textColorHint="@color/hintrenk"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    android:id="@+id/textViewSifremiUnuttum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Şifremi unuttum"
+                    android:textColor="@color/acikrenkgri"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/buttonFragmentGiris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_kayit_giris_ovallestir"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Giriş yap"
+                    android:textAllCaps="false"
+                    android:textColor="@color/beyaz"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+</ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beyaz"
+    tools:context=".Activitys.UrunDetay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarUrunDetay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/beyaz"
+        android:theme="@style/ToolbarHome">
+
+        <TextView
+            android:id="@+id/textViewUrunDetayToolbarIsım"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürün Detay"
+            android:textColor="@color/siyah"
+            android:textSize="21dp"
+            android:layout_marginRight="?android:attr/actionBarSize"
+            android:layout_marginLeft="?android:attr/actionBarSize"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/urunDetayImageView"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/profil_ic_avatar"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/textViewurunAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textViewUrunDetayFiyat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/anarenk"
+                        android:textSize="24sp"
+                        android:text=" ₺"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerUrunFotolar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp">
+
+        </android.support.v4.view.ViewPager>
+        <TextView
+            android:id="@+id/textViewUrunOzellikleri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+        <Button
+            android:id="@+id/buttonSatildi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_kayit_giris_ovallestir"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/beyaz"
+            android:text="Satıdı"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/mesajGonder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_kayit_giris_ovallestir"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/beyaz"
+            android:text="Mesaj gönder"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="18dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/IlaniDuzenle"
+        app:showAsAction="never"
+        
+        android:title="İlanı düzenle">
+    </item>
+    <item
+        android:id="@+id/IlanıSil"
+        app:showAsAction="never"
+        android:title="İlanı sil">
+    </item>
+</menu>

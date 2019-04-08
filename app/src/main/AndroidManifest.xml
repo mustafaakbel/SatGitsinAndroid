@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mustafa.satgitsin">
+
+    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE " />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE " />
+
+    <application
+        android:name=".SatGitsin"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+            </intent-filter>
+
+        </service>
+
+        <activity android:name=".Activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activitys.BaslangicActivity" />
+        <activity
+            android:name=".Activitys.KayitGirisActivity"
+            android:parentActivityName=".Activitys.BaslangicActivity" />
+        <activity
+            android:name=".Activitys.SifremiUnuttum"
+            android:parentActivityName=".Activitys.KayitGirisActivity" />
+        <activity android:name=".Activitys.KullanicAyarlari" />
+        <activity
+            android:name=".Activitys.AyarDegistirme"
+            android:parentActivityName=".Activitys.KullanicAyarlari" />
+        <activity android:name=".Activitys.UrunDetay" />
+        <activity android:name=".Activitys.ProfilActivity" />
+        <activity android:name=".Activitys.IlanDuzenleActivity" />
+        <activity android:name=".Activitys.MesajActivity" >
+            <intent-filter>
+                <action android:name="com.mustafa.satgitsin_TARGET_NOTIFICATION"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

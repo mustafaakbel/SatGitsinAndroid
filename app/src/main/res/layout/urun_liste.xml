@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewUrun"
+        android:layout_width="96dp"
+        android:layout_height="96dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/texViewUrunAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/siyah"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewUrunFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/siyah"
+                android:textSize="19dp"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:id="@+id/textViewTlGorunum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/anarenk"
+                android:textSize="19dp"
+                android:layout_marginTop="25dp"
+                android:text="  ₺"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

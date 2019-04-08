@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beyaz"
+    tools:context=".Activitys.MesajActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMesajGonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarHome">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mesajSayfasiAvatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/mesajSayfasiIsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textSize="19sp"
+            android:textColor="@color/siyah"/>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerViewMesajlar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarMesajGonder"
+        android:layout_above="@id/AltTaraf">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/AltTaraf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beyaz"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/mesajIcerik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mesajınız.."
+            android:layout_toLeftOf="@id/imageViewGonder"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/imageViewGonder"
+            android:background="@mipmap/ic_gondermesaj_round"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
